@@ -1,0 +1,67 @@
+body{
+    background-color: rgba(30,26,27,255);
+}
+#d1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a{
+    display: flex;
+    color: rgba(200,192,66,255);
+    text-decoration: underline;
+}
+span{
+    color: rgba(200,192,66,255);
+    text-decoration: underline;
+}
+p{
+    color: white;
+}
+    a:first-child::before{
+    content: "Lien classique";
+}
+    a:nth-child(2)::before{
+        content: "Lien vers un site externe ";
+        
+}
+a:nth-child(3):before{
+    content: " Lien vers un pdf ";
+    
+}
+a:nth-child(4):after{
+    content: " Envoyer un courriel ";
+    
+}
+a:nth-child(5):after{
+    content: " Effectuer un appel ";
+    
+}
+a:nth-child(6):after{
+    content: " Envoyer un texto";
+    
+}
+
+#divT{
+    display: flex;
+    justify-content: center;
+}
+span:first-child:before{
+    content: " Retour à l'origine ";
+}
+span:nth-child(2)::before{
+    content: " optique de développement durable  et d'équité";
+}
+span:nth-child(3)::before{
+    content: " producteurs et productrices desquels nous achetons nos cafés";
+}
+span:nth-child(4)::before{
+    content: " Courriel";
+}
+span:nth-child(6)::before{
+    content: " Téléphone";
+}
+span:nth-child(8)::before{
+    content: " texto";
+}
